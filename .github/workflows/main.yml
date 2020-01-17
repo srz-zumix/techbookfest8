@@ -1,0 +1,14 @@
+on: [push]
+
+name: GitHub Actions
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    # container:
+    #   image: docker://kauplan/review2.5
+    steps:
+      - uses: actions/checkout@master
+      - uses: docker://kauplan/review2.5
+        with:
+          entrypoint: bash
+          args: -c "cd ci-dex; rake pdf"
