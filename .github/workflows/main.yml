@@ -8,9 +8,12 @@ jobs:
     #   image: docker://kauplan/review2.5
     steps:
       - uses: actions/checkout@master
+      - name: Checkout submodules
+        uses: actions/checkout@v2
         with:
+          repository: srz-zumix/ci-dex-review-contents
           token: ${{ secrets.ACCESS_TOKEN }}
-          submodules: true
+          path: ci-dex/contents
       - uses: docker://kauplan/review2.5
         with:
           entrypoint: bash
