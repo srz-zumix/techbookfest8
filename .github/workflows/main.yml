@@ -18,3 +18,7 @@ jobs:
         with:
           entrypoint: bash
           args: -c "cd ci-dex; rake pdf"
+      - uses: actions/upload-artifact@v1
+        with:
+          name: ci-dex
+          path: ci-dex/ci-dex.pdf
