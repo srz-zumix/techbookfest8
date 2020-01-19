@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: srz-zumix/ci-dex-review-contents
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.GitHub_PAT }}
           path: ci-dex/contents
       - uses: docker://kauplan/review2.5
         with:
