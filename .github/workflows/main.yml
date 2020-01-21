@@ -18,6 +18,10 @@ jobs:
         with:
           entrypoint: bash
           args: -c "cd ci-dex; rake pdf"
+      - name: copy artifacts
+        run: |
+          mkdir artifacts
+          cp ci-dex/ci-dex.pdf ./artifacts
       - name: Extract branch name
         id: extract_branch
         run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
@@ -28,7 +32,7 @@ jobs:
       - name: Upload to Google Drive
         uses: satackey/action-google-drive@v1
         with:
-          upload-from: ./ci-dex/ci-dex.pdf
+          upload-from: ./artifacts
           upload-to: /BOOK/techbookfest/techbookfest8/${{ steps.extract_branch.outputs.branch }}
           skicka-tokencache-json: ${{ secrets.SKICKA_TOKENCACHE_JSON }}
           google-client-id: ${{ secrets.SKICKA_CLIENT_ID }}
