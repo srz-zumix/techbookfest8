@@ -2,8 +2,13 @@ PREDEF:
   - chap00-preface.re
 
 CHAPS:
-  - chap01-free-ci.re
-  - chap02-appveyor.re
+  - 無料で使える CI サービス一覧:
+    - chap01-free-ci.re
+    - chap02-recommend.re
+    - chap03-free-others.re
+    - chap04-appveyor.re
+  - 無料で使える CI サービス比較:
+    - chap10-vs.re
 
 APPENDIX:
 
