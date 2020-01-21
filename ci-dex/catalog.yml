@@ -2,6 +2,8 @@ PREDEF:
   - chap00-preface.re
 
 CHAPS:
+  - chap01-free-ci.re
+  - chap02-appveyor.re
 
 APPENDIX:
 
