@@ -30,5 +30,6 @@ jobs:
         with:
           upload-from: ./ci-dex/ci-dex.pdf
           upload-to: /BOOK/techbookfest/techbookfest8/${{ steps.extract_branch.outputs.branch }}
-          google-client-id: ${{ secrets.SKICKA_CLIENT_ID }}
-          google-client-secret: ${{ secrets.SKICKA_CLIENT_SECRET }}
+          skicka-tokencache-json: ${{ secrets.SKICKA_TOKENCACHE_JSON }}
+          # google-client-id: ${{ secrets.SKICKA_CLIENT_ID }}
+          # google-client-secret: ${{ secrets.SKICKA_CLIENT_SECRET }}
