@@ -37,3 +37,9 @@ jobs:
           skicka-tokencache-json: ${{ secrets.SKICKA_TOKENCACHE_JSON }}
           google-client-id: ${{ secrets.SKICKA_CLIENT_ID }}
           google-client-secret: ${{ secrets.SKICKA_CLIENT_SECRET }}
+      - name: Notify slack
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        uses: pullreminders/slack-action@master
+        with:
+          args: '{\"channel\":\"CSYR0PEHW",\"text\":\"Hello world\"}'
