@@ -42,4 +42,4 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         uses: pullreminders/slack-action@master
         with:
-          args: '{\"channel\":\"CSYR0PEHW",\"text\":\"Hello world\"}'
+          args: '{\"channel\":\"CSYR0PEHW",\"text\":\"Upload new pdf!!\"}'
