@@ -2,7 +2,7 @@ PREDEF:
   - chap00-preface.re
 
 CHAPS:
-  - 無料で使える CI サービス一覧:
+  - 無料で使える CI サービス紹介:
     - chap01-free-ci.re
     - chap02-recommend.re
     - chap03-free-others.re
