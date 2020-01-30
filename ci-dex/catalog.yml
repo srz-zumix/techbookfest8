@@ -1,5 +1,5 @@
 PREDEF:
-  - chap000-preface.re
+  - c000-preface.re
 
 CHAPS:
   - 無料で使える CI サービス紹介:
