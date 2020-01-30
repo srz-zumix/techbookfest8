@@ -47,7 +47,6 @@ jobs:
         if: failure()
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-          ACTIONS_URL: https://github.com/${{ env.GITHUB_REPOSITORY }}/commit/${ env.GITHUB_SHA }}/checks?check_suite_id=${{ env.GITHUB_CHECK_SUITE_ID }}
         uses: pullreminders/slack-action@master
         with:
-          args: "{\\\"channel\\\":\\\"CSYR0PEHW\\\",\\\"text\\\":\\\"<!here> fail ${{ env.ACTIONS_URL }}\\\"}"
+          args: "{\\\"channel\\\":\\\"CSYR0PEHW\\\",\\\"text\\\":\\\"<!here> fail https://github.com/${{ env.GITHUB_REPOSITORY }}/commit/${ env.GITHUB_SHA }}/checks?check_suite_id=${{ env.GITHUB_CHECK_SUITE_ID }}\\\"}"
