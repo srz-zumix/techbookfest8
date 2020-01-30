@@ -49,4 +49,4 @@ jobs:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
         uses: pullreminders/slack-action@master
         with:
-          args: '{\"channel\":\"CSYR0PEHW\",\"text\":\"@here fail https://github.com/srz-zumix/techbookfest8/actions/runs/${GITHUB_ACTION}\"}'
+          args: "{\"channel\":\"CSYR0PEHW\",\"text\":\"<!here> fail https://github.com/srz-zumix/techbookfest8/actions/runs/${GITHUB_ACTION}\"}"
