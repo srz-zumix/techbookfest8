@@ -3,12 +3,25 @@ PREDEF:
 
 CHAPS:
   - 無料で使える CI サービス紹介:
-    - chap01-free-ci.re
-    - chap02-recommend.re
-    - chap03-free-others.re
-    - chap04-appveyor.re
+    - c001-free-ci.re
+    - c002-recommend.re
+    - c010-appveyor.re
+    - c010-azure.re
+    - c010-bitrise.re
+    - c010-buddy.re
+    - c010-circleci.re
+    - c010-cirrus.re
+    - c010-codefresh.re
+    - c010-codeship.re
+    - c010-drone.re
+    - c010-github.re
+    - c010-semaphore.re
+    - c010-shippable.re
+    - c010-travis.re
+    - c010-wercker.re
+    - c090-free-others.re
   - 無料で使える CI サービス比較:
-    - chap10-vs.re
+    - c100-vs.re
 
 APPENDIX:
 
