@@ -22,8 +22,16 @@ CHAPS:
     - c090-free-others.re
   - 無料で使える CI サービス比較:
     - c100-vs.re
+    - c101-vs-env.re
+    - c102-vs-spec.re
+    - c103-vs-yaml.re
+    - c104-vs-commit-commnet.re
+    - c105-vs-share.re
+    - c106-vs-secret.re
+    - c130-vs-badge.re
 
 APPENDIX:
+  - c200-appendix.re
 
 POSTDEF:
 
