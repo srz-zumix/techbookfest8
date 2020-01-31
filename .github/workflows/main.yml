@@ -1,7 +1,7 @@
 on:
   push:
     paths:
-      - 'ci-dex/'
+      - 'ci-dex/**'
 
 name: GitHub Actions
 jobs:
