@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - 'ci-dex/**'
+      - '.github/workflows/**'
 
 name: GitHub Actions
 jobs:
