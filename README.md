@@ -8,3 +8,9 @@
 ![配置](./pr/circle-layout-day2e08-allow.png)
 
 ![サークルカット](./pr/circle-cut.png)
+
+## Build
+
+### Local
+
+> docker run --rm -v $PWD:/work kauplan/review2.5 /bin/bash -c "cd /work; rake preproc pdf;"
