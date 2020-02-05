@@ -7,9 +7,9 @@ CHAPS:
     - c010-appveyor.re
     - c010-azure.re
     - c010-bitrise.re
-    - c010-buddy.re
+    - c010-buddy-works.re
     - c010-circleci.re
-    - c010-cirrus.re
+    - c010-cirrus-ci.re
     - c010-codefresh.re
     - c010-codeship.re
     - c010-drone.re
