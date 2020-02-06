@@ -13,7 +13,7 @@ CHAPS:
     - c010-codefresh.re
     - c010-codeship.re
     - c010-drone.re
-    - c010-github.re
+    - c010-github-actions.re
     - c010-semaphore.re
     - c010-shippable.re
     - c010-travis.re
