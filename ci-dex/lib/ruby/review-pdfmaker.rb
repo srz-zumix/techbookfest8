@@ -474,7 +474,7 @@ module ReVIEW
 
     def copy_images(from, to)
       return unless File.exist?(from)
-      Dir.mkdir(to)
+      FileUtils.mkdir_p(to)
       ReVIEW::MakerHelper.copy_images_to_dir(from, to)
       Dir.chdir(to) do
         images = Dir.glob('**/*.{jpg,jpeg,png,pdf,ai,eps,tif,tiff}')
