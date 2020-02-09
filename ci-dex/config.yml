@@ -172,6 +172,7 @@ titlepage: true
 # advfile: null
 
 # 取り込む画像が格納されているディレクトリ。省略した場合は以下
+# imagedir: images
 imagedir: contents/images
 
 # 取り込むフォントが格納されているディレクトリ。省略した場合は以下
