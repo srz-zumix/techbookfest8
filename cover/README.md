@@ -9,6 +9,9 @@
 * タイトル
   * color: #000000
   * font: UD Digi Kyokasho NP-B Bold
+* テキスト
+  * CI サービスを徹底比較
+  * YAML 実例つき！
 
 ## cover4
 
