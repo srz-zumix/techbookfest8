@@ -351,6 +351,13 @@ pdfmaker:
   #
   # 表紙に配置し、書籍の影絵にも利用する画像ファイル。同人誌の印刷では一般的に、表紙は本文と別ファイルにするので、ここはnullにする。
   # coverimage: cover4.jpg
+
+  # 表紙ページの挿入 for Starter
+  # coverimage: null
+  ### Starterでは、表紙をPDFで用意してください
+  # coverpdf_files: [cover.pdf]  # PDFファイル名（複数可）
+  # coverpdf_option: "offset=-0.23cm 0.23cm" # 必要に応じて調整
+
   #
   # pdfmaker:階層を使うものはここまで
 

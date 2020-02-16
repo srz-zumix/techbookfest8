@@ -64,6 +64,7 @@
 \usepackage{float}
 \usepackage{alltt}
 \usepackage{amsmath}
+\usepackage{pdfpages}
 
 %% if you use @<u>{} (underline), use jumoline.sty
 \IfFileExists{jumoline.sty}{
@@ -324,6 +325,10 @@
     \includegraphics[<%= @coverimageoption%>]{./<%= @config["imagedir"] %>/<%= @config["coverimage"] %>}
   \end{center}
   \clearpage
+<%-     end -%>
+<%-     [@config["coverpdf_files"]].flatten.compact.each do |pdf_file| -%>
+  \includepdf[<%= @config["coverpdf_option"] %>]{./<%= @config["imagedir"] %>/<%= pdf_file %>}
+  \makeatletter\advance\c@page by -1\relax\makeatother
 <%-     end -%>
   \ifdefined\mytitlepage %%%%%%%%%%
     \mytitlepage   % defined in 'sty/mytitlepage.sty'
