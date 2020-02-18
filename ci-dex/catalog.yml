@@ -5,7 +5,7 @@ CHAPS:
   - 無料で使える CI サービス紹介:
     - c001-free-ci.re
     - c010-appveyor.re
-    - c010-azure.re
+    - c010-azure-pipelines.re
     - c010-bitrise.re
     - c010-buddy-works.re
     - c010-circleci.re
