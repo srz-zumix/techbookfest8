@@ -23,7 +23,7 @@ CHAPS:
     - c101-vs-env.re
     - c102-vs-specs.re
     - c103-vs-yaml.re
-    - c104-vs-commit-comment.re
+    - c104-vs-comment-command.re
     - c105-vs-share.re
     - c106-vs-security.re
     - c130-vs-badge.re
