@@ -90,7 +90,7 @@ starter:
   terminal_border: false
 
   ## 文章中の「@<code>{...}」の背景色を薄いグレーにするか？
-  inlinecode_gray: false
+  inlinecode_gray: true
 
   ## 奥付 (Colophon) に「powered by Re:VIEW Starter」と入れるか？
   colophon_poweredby: true
