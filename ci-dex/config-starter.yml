@@ -33,7 +33,8 @@ starter:
 
   ## 節 (Section) タイトルの装飾
   ## （none: なし、underline: 下線、grayback: 灰色の背景色）
-  section_decoration: underline
+  # section_decoration: underline
+  section_decoration: grayback
 
   ## 項 (Subsection) タイトルの装飾
   ## （none: なし、symbol: 先頭にクローバー）
