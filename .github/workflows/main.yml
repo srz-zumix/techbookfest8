@@ -28,9 +28,11 @@ jobs:
           cp ci-dex/ci-dex.pdf ./artifacts
       # 電子書籍版
       - uses: docker://kauplan/review2.5
+        env:
+          config: config-e.yml
         with:
           entrypoint: bash
-          args: -c "cd ci-dex; STARTER_TARGET=ebook rake preproc pdf"
+          args: -c "cd ci-dex; rake preproc pdf"
       - name: copy artifacts
         run: |
           cp ci-dex/ci-dex.pdf ./artifacts/e-ci-dex.pdf

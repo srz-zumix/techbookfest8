@@ -15,7 +15,7 @@ review_version: 2.0
 # その値がB.ymlよりも優先される。
 # 同様にA.yml、B.yml内でさらにinherit:パラメータを使うこともできる。
 # inherit: ["A.yml", "B.yml"]
-inherit: ["config-base.yml", "config-starter.yml"]
+inherit: ["config-base.yml", "config-starter.yml", "config-starter-e.yml"]
 
 # 以下はオプション
 # 以下はオプション(autと同じように配列書式で複数指定可能)。
@@ -46,13 +46,13 @@ inherit: ["config-base.yml", "config-starter.yml"]
 # a-pht, pht: 撮影責任者
 # a-pbl, pbl: 出版社（発行所）
 # a-prt, prt: 印刷所
-prt: 日光企画
 # a-red, red: 項目の枠組起草者
 # a-rev, rev: 評論者
 # a-spn, spn: 援助者
 # a-ths, ths: 監督者
 # a-trc, trc: 筆記・タイプ作業者
 # a-trl, trl: 翻訳者
+
 
 # 表紙にするHTMLファイル。ファイル名を指定すると表紙として入る
 # cover: null
@@ -80,6 +80,7 @@ titlepage: true
 
 # プロフィールページファイル  (PDFMaker向けにはLaTeXソース断片、EPUBMaker向けにはHTMLファイル)。ファイル名を指定すると著者紹介として入る
 # profile: null
+
 # プロフィールページの目次上の見出し
 # profiletitle: 著者紹介
 
@@ -88,6 +89,91 @@ titlepage: true
 
 # カタログファイル名を指定する
 # catalogfile: catalog.yml
+
+# EPUBのOPFへの固有の追加ルール
+# <package>要素に追加する名前空間
+# opf_prefix: {ebpaj: "http://www.ebpaj.jp/"}
+# 追加する<meta>要素のプロパティとその値
+# opf_meta: {"ebpaj:guide-version": "1.1.3"}
+
+# 以下のパラメータを有効にするときには、
+# epubmaker:
+#    パラメータ: 値
+#    パラメータ: 値
+#   ...
+# という構成にする必要がある(インデントさせる)
+
+epubmaker:
+  # HTMLファイルの拡張子
+  htmlext: xhtml
+  #
+  # 目次を要素の階層表現にしない。省略した場合(null)は階層化する。
+  # 特に部扉が入るなどの理由で、構成によっては階層化目次でepubcheckに
+  # パスしない目次ができるが、そのようなときにはこれをtrueにする
+  # flattoc: null
+  #
+  # 目次のインデントレベルをスペース文字で表現する(flattocがtrueのときのみ)
+  # flattocindent: true
+  #
+  # NCX目次の見出しレベルごとの飾り(配列で設定)。EPUB3ではNCXは作られない
+  # ncxindent:
+  #-
+  #- -
+  # フックは、各段階で介入したいときのプログラムを指定する。自動で適切な引数が渡される
+  # プログラムには実行権限が必要
+  # ファイル変換処理の前に実行するプログラム。スタイルシートのコンパイルをしたいときなどに利用する。
+  # 渡される引数1=作業用展開ディレクトリ
+  # hook_beforeprocess: null
+  #
+  # 前付の作成後に実行するプログラム。作業用展開ディレクトリにある目次ファイル(toc-html.txt)を操作したいときなどに利用する。
+  # 渡される引数1=作業用展開ディレクトリ
+  # hook_afterfrontmatter: null
+  #
+  # 本文の変換後に実行するプログラム。作業用展開ディレクトリにある目次ファイル(toc-html.txt)を操作したいときなどに利用する。
+  # 渡される引数1=作業用展開ディレクトリ
+  # hook_afterbody: null
+  #
+  # 後付の作成後に実行するプログラム。作業用展開ディレクトリにある目次ファイル(toc-html.txt)を操作したいときなどに利用する。
+  # 渡される引数1=作業用展開ディレクトリ
+  # hook_afterbackmatter: null
+  #
+  # 画像およびフォントをコピーした後に実行するプログラム。別の画像やフォントを追加したいときなどに利用する。
+  # 渡される引数1=作業用展開ディレクトリ
+  # hook_aftercopyimage: null
+  #
+  # ePUB zipアーカイブ直前に実行するプログラム。メタ情報などを加工したいときなどに利用する。
+  # 渡される引数1=ePUB準備ディレクトリ
+  # hook_prepack: null
+  #
+  # 変換したHTMLファイルおよびCSSを解析して厳密に使用している画像ファイルだけを取り込むか。デフォルトはnull(imagesディレクトリすべてを取り込む)
+  # なお、フォント、カバー、広告についてはこの設定によらずディレクトリ内のものがすべて取り込まれる
+  # verify_target_images: null
+  #
+  # verify_target_imagesがtrueの状態において、解析で発見されなくても強制的に取り込むファイルの相対パスの配列
+  # force_include_images: []
+  #
+  # 画像ファイルの縦x横の最大ピクセル数許容値
+  # image_maxpixels: 4000000
+  #
+  # Re:VIEWファイル名を使わず、前付にpre01,pre02...、本文にchap01,chap02l...、後付にpost01,post02...という名前付けルールにするか
+  # rename_for_legacy: null
+  #
+  # ePUBアーカイブの非圧縮実行
+  # zip_stage1: "zip -0Xq"
+  #
+  # ePUBアーカイブの圧縮実行
+  # zip_stage2: "zip -Xr9Dq"
+  #
+  # ePUBアーカイブに追加するパス(デフォルトはmimetype、META-INF、OEBPS)
+  # zip_addpath: null
+  #
+  # EPUBで表紙をコンテンツに含めるか。デフォルトでは作成されない。yesにするとiBooks等でも最初に表紙が表示されるようになる
+  # cover_linear: null
+  #
+  # @<href>タグでの外部リンクを禁止し、地の文にする(falseで禁止する)
+  # externallink: true
+  #
+  # epubmaker:階層を使うものはここまで
 
 # 以下のパラメータを有効にするときには、
 # pdfmaker:
