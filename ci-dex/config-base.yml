@@ -182,13 +182,6 @@ imagedir: contents/images
 # カタログファイル名を指定する
 # catalogfile: catalog.yml
 
-# reファイルを格納するディレクトリ。デフォルト値は null。
-# 値にたとえば「contents」を指定すると、reファイルはすべて「contents」
-# ディレクトリに置かなければならず、カレントディレクトリには一切置いては
-# ならない。
-# contentdir: null
-contentdir: contents
-
 # 1ページの行数文字数と1kbごとのページ数を用紙サイズで指定する(A5 or B5)。
 # page_metric: A5
 #

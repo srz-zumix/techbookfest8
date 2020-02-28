@@ -54,6 +54,13 @@ prt: 日光企画
 # a-trc, trc: 筆記・タイプ作業者
 # a-trl, trl: 翻訳者
 
+# reファイルを格納するディレクトリ。デフォルト値は null。
+# 値にたとえば「contents」を指定すると、reファイルはすべて「contents」
+# ディレクトリに置かなければならず、カレントディレクトリには一切置いては
+# ならない。
+# contentdir: null
+contentdir: contents
+
 # 表紙にするHTMLファイル。ファイル名を指定すると表紙として入る
 # cover: null
 #
