@@ -11,8 +11,12 @@
   * size: 260
   * font: UD Digi Kyokasho NP-B Bold
   * box: 300x400
-    * #ff7321
-    * 
+    * C #ff7321
+    * I #00b0a8
+    * サ #ff528c
+    * ー
+    * ビ
+    * ス
 * テキスト
   * CI サービスを徹底比較
   * YAML 実例つき！
