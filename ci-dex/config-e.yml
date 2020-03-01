@@ -53,6 +53,9 @@ inherit: ["config-base.yml", "config-starter.yml", "config-starter-e.yml"]
 # a-trc, trc: 筆記・タイプ作業者
 # a-trl, trl: 翻訳者
 
+# カタログファイル名を指定する
+catalogfile: catalog-e.yml
+
 # reファイルを格納するディレクトリ。デフォルト値は null。
 # 値にたとえば「contents」を指定すると、reファイルはすべて「contents」
 # ディレクトリに置かなければならず、カレントディレクトリには一切置いては
