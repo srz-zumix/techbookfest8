@@ -8,15 +8,16 @@
 * 帯カラー (#98d2e3)
 * タイトル
   * color: #ffffff
-  * size: 260
+  * size: 220, 260
   * font: UD Digi Kyokasho NP-B Bold
-  * box: 300x400
-    * C #ff7321
-    * I #00b0a8
-    * サ #ff528c
-    * ー
-    * ビ
-    * ス
+  * box: 300x400 30
+    * C #ff7321 #af3300
+    * I #00b0a8 #016c67
+    * サ #ff528c #a72b45
+    * ー #00a8ff #00669d
+    * ビ #ffb900 #a95b00
+    * ス #00a971 #00753f
+  
 * テキスト
   * CI サービスを徹底比較
   * YAML 実例つき！
