@@ -220,6 +220,7 @@ pdfmaker:
   ### Starterでは、表紙をPDFで用意してください
   # coverpdf_files: [cover.pdf]  # PDFファイル名（複数可）
   # coverpdf_option: "offset=-0.23cm 0.23cm" # 必要に応じて調整
+  coverpdf_files: [cover-e.pdf, cover4-e.pdf]  # PDFファイル名（複数可）
 
   #
   # pdfmaker:階層を使うものはここまで
