@@ -5,6 +5,25 @@
 ![技術書典8Day2え08](https://img.shields.io/badge/Day2-%E3%81%8808-green)
 [![GitHub Actions Status](https://github.com/srz-zumix/techbookfest8/workflows/GitHub%20Actions/badge.svg?branch=master)](https://github.com/srz-zumix/techbookfest8/actions?query=workflow%3A%22GitHub+Actions%22)
 
+## 技術書典 応援祭
+
+[技術書典 応援祭](https://blog.techbookfest.org/2020/02/28/cheering-tbf/)
+
+```
+虎空棘魚は「#技術書典 応援祭」に参加します。
+
+「あつまれ CI サービス　タダではじめる継続的インテグレーション生活」と題して、
+過去6年間で使ってきた「無料で使える CI サービス」の中から厳選した 13 サービスを一冊にまとめました。
+よろしくお願いするだなも！
+```
+
+[https://twitter.com/srz_zumix/status/1234811945175240705](https://twitter.com/srz_zumix/status/1234811945175240705)
+
+
+## 技術書典8 （中止）
+
+[技術書典8](https://techbookfest.org/event/tbf08)
+
 ![配置](./pr/circle-layout-day2e08-allow.png)
 
 ![サークルカット](./pr/circle-cut.png)
