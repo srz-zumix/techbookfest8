@@ -7,7 +7,7 @@
 
 ## 技術書典 応援祭
 
-[技術書典 応援祭](https://blog.techbookfest.org/2020/02/28/cheering-tbf/)
+[技術書典 応援祭](https://techbookfest.org/product/4931278088437760)
 
 ```
 虎空棘魚は「#技術書典 応援祭」に参加します。
