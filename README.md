@@ -30,6 +30,8 @@
 #技術書典 #推し祭出展者の陣 @techbookfest https://techbookfest.org/product/4931278088437760
 ```
 
+[https://twitter.com/srz_zumix/status/1241684086176927745](https://twitter.com/srz_zumix/status/1241684086176927745)
+
 ## 技術書典8 （中止）
 
 [技術書典8](https://techbookfest.org/event/tbf08)
